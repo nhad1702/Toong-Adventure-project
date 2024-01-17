@@ -1,0 +1,563 @@
+:root {
+    --primary-background-color: #003f3b;
+    --primary-dark-background-color: #080808;
+    --primary-span-color: #f46036;
+    --primary--title-color: #fff;
+    --primary-font-family: 'Livvic', sans-serif;
+    --secondary-font-family: 'Quicksand', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+h1, .title1, .expert, .hiking h1, .tren h1, .duoi h1, .findTour div {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 700;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+}
+
+header {
+    background-color: var(--primary-background-color);
+    color: rgb(255, 255, 255);
+    gap: 0.5rem;
+    padding: 10px 0;
+    width: 100%;
+    font-family: var(--primary-font-family);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navi, .setup {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.navi div {
+    padding: 0 10px;
+}
+
+.setup {
+    font-family: var(--secondary-font-family);
+}
+
+.setup div {
+    padding: 0 10px;
+}
+
+section {
+    height: 100vh;
+}
+
+.intro {
+    background-image: url(img/mainWeb.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    padding: 0 50px;
+}
+
+.signUp {
+    height: 80vh;
+    padding: 76px 90px;
+    background-color: rgb(240, 235, 219);
+    .find {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .findTour {
+            width: 50%;
+            max-width: 381px;
+        }
+        p {
+            font-family: var(--secondary-font-family);
+            font-style: normal;
+            text-align: justify;
+        }
+        .safe {
+            width: 25%;
+        }
+        .item-content {
+            padding-bottom: 1.25rem;
+            display: flex;
+            h3 {
+                font-family: var(--primary-font-family);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.heading {
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hiking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+h1 span, .title1 span, .expert span, .tren span, .duoi span, .findTour span {
+    color: var(--primary-span-color);
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 700;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+}
+
+.heading p, .title1 p, .container p {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    text-align: justify;
+    width: 50%;
+}
+
+.journey {
+    width: 100%;
+    height: 400vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.tours {
+    cursor: pointer;
+    height: 100%;
+    width: 462px;
+    border: 0.05px solid rgb(222, 220, 220);
+    border-radius: 5px;
+    align-content: center;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    grid-auto-rows: max-content;
+    gap: 30px;
+}
+
+.tours img {
+    width: 100%;
+    height: 311px;
+    border-radius: 5px 5px 0 0;
+    position: inherit;
+    vertical-align: middle;
+}
+
+.noiDung {
+    font-family: 'Livvic', sans-serif;
+    font-style: normal;
+    text-align: left;
+    padding: 1rem;
+}
+
+.nameTitle {
+    color: var(--primary-background-color);
+    font-family: 'Livvic', sans-serif;
+    font-weight: 700 !important;
+}
+
+.tours:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.space {
+    height: 7px;
+    background-color: #dacda5;
+}
+
+.pros {
+    height: 100vh;
+    width: 100%;
+    background-color: #dfeff1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.head1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 63%;
+    margin-bottom: 0.5rem;
+}
+
+.title1 {
+    text-align: center;
+}
+
+.head1 p {
+    padding-top: 1rem;
+}
+
+.prosCond {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    height: auto;
+    width: 100%;
+    height: 330px;
+}
+
+.tienIch {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 265px;
+    margin: 10px 0;
+}
+
+.hinh {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.head2 {
+    font-family: 'Livvic', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.nDung {
+    width: 70%;
+    text-align: center;
+}
+
+.prosPeople {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 125px;
+    background-color: #fff;
+    height: 70vh;
+}
+
+.leftExpert {
+    width: 50%;
+    padding: 1.25rem;
+}
+
+.expert {
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.leftExpert p {
+    font-size: 17px;
+    line-height: 26px;
+    text-align: justify;
+    width: 80%;
+    margin-top: 1.5rem;
+}
+
+.btn-primary {
+    margin-top: 1.5rem;
+    float: left;
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 26px;
+    width: auto;
+    color: var(--primary--title-color);
+    background: var(--primary-background-color);
+    border-radius: 5px;
+    padding: 0.5rem 1.25rem;
+    cursor: pointer
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: var(--primary--title-color);
+}
+
+.rightExpert {
+    width: 50%;
+    margin: 1.5rem 0;
+}
+
+.listExpert {
+    touch-action: pan-y;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+    transition-duration: 0ms;
+}
+
+.list {
+    transition-duration: 0ms;
+    transform: translate3d(-1544px, 0, 0);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition-property: transform;
+    box-sizing: content-box !important;
+}
+
+.prop {
+    height: 50vh;
+    background-image: url(img/bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prop {
+    padding: 125px 274px;
+    h1 {
+        font-family: var(--primary-font-family);
+        color: var(--primary--title-color);
+        padding-bottom: 1.25rem;
+
+    }
+    p {
+        font-family: var(--secondary-font-family);
+        font-size: 17px;
+        font-style: normal;
+        text-align: justify;
+        color: var(--primary--title-color);
+    }
+    .btn-more {
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: 17px;
+        font-style: normal;
+        padding: 0.5rem 1.25rem;
+        background: none;
+        border: 1px solid var(--primary--title-color);
+        color: var(--primary--title-color);
+        border-radius: 5px;
+    }
+}
+
+.social {
+    height: 100vh;
+    .tren {
+        padding: 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 21px;
+            line-height: 30px;
+            font-family: var(--secondary-font-family);
+            text-align: center;
+        }
+
+        .grid-tempt {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20rem;
+            .media {
+                .markNum {
+                    font-family: 'Permanent Marker', cursive;
+                    color: var(--primary-span-color);
+                    font-weight: 400;
+                    font-size: 35px;
+                    line-height: 51px;
+                }
+                .view {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 0.75rem;
+                    }
+                    div p {
+                        text-align: left;
+                    }
+                    .titleTop {
+                        color: var(--primary-background-color);
+                        font-size: 26px;
+                        line-height: 34px;
+                        font-family: var(--primary-font-family);
+                        font-style: normal;
+                        font-weight: 700;
+                        padding-top: 0.75rem;
+                    }
+                    .titleBot {
+                        font-weight: 700;
+                        font-size: 21px;
+                        line-height: 30px;
+                        font-family: var(--primary-font-family);
+                        color: #ababab;
+                        margin-top: -10px;
+                    }
+                }
+            }
+        }
+    }
+    .duoi {
+        padding: 80px 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .grid-tempt2 {
+            display: grid;
+            grid-template-columns: repeat(6, 0.1fr);
+            gap: 1rem;
+            .holder {
+                height: 208px;
+                width: 208px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                padding-top: 100%;
+            }
+            .no1 {
+                background-image: url(img/bidoup.png);
+            }
+            .no2 {
+                background-image: url(img/intoWild.png);
+            }
+            .no3 {
+                background-image: url(img/decathlon.png);
+            }
+            .no4 {
+                background-image: url(img/scb.png);
+            }
+            .no5 {
+                background-image: url(img/vng.png);
+            }
+            .no6 {
+                background-image: url(img/vqg.png);
+            }
+        }
+    }
+}
+
+footer {
+    height: 70vh;
+    background-color: var(--primary-background-color);
+    padding: 0 15px;
+    color: #fff;
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 29px;
+        display: flex;
+        flex-direction: row;
+        a {
+            text-decoration: none;
+        }
+        .half-width {
+            width: 50%;
+            .endTitle {
+                padding-top: 4rem;
+                padding-bottom: 0.75rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+                img {
+                    padding: 0.75rem 0.75rem 0.75rem 0;
+                }
+                h2 {
+                    padding-top: 1.25rem;
+                    font-size: var(--primary-font-family);
+                    font-weight: 700;
+                    font-style: normal;
+
+                }
+            }
+            .contact {
+                padding-bottom: 1.25rem;
+                font-family: var(--secondary-font-family);
+                img {
+                    padding-right: 0.5rem;
+                }
+                li {
+                    padding: 0.75rem 0;
+                }
+            }
+            li {
+                list-style: none;
+                font-family: var(--secondary-font-family)
+            }
+        }
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            padding: 4rem 0 1.25rem 1rem;
+            div {
+                width: 250px;
+                height: 168px;
+            }
+            h2 {
+                font-family: var(--primary-font-family);
+                font-style: normal;
+                font-size: 700;
+                font-size: 17px;
+                line-height: 26px;
+            }
+            li {
+                padding-top: 1rem;
+            }
+        }
+    }
+    .credit {
+        border-top: 1px solid #fff;
+        padding-top: 1.75rem;
+        font-family: var(--primary-font-family);
+        font-style: normal;
+        p {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 26px;
+        }
+    }
+}
