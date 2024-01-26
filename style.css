@@ -61,6 +61,19 @@ header {
     padding: 0 10px;
 }
 
+.loginSignUp {
+    a {
+        text-decoration: none;
+        font-family: var(--primary-font-family);
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 26px;
+    }
+    span {
+        padding: 0 5px;
+    }
+}
+
 section {
     height: 100vh;
 }
@@ -484,9 +497,10 @@ h1 span, .title1 span, .expert span, .tren span, .duoi span, .findTour span {
 }
 
 footer {
-    height: 70vh;
+    height: 100%;
     background-color: var(--primary-background-color);
     padding: 0 15px;
+    padding-bottom: 10px;
     color: #fff;
     .footer {
         padding-top: 50px;
