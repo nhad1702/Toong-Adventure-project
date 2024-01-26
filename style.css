@@ -75,10 +75,11 @@ header {
 }
 
 section {
-    height: 100vh;
+    height: 100%;
 }
 
 .intro {
+    height: 100vh;
     background-image: url(img/mainWeb.png);
     background-size: cover;
     display: flex;
@@ -96,7 +97,7 @@ section {
 }
 
 .signUp {
-    height: 80vh;
+    height: 100%;
     padding: 76px 90px;
     background-color: rgb(240, 235, 219);
     .find {
@@ -397,7 +398,7 @@ h1 span, .title1 span, .expert span, .tren span, .duoi span, .findTour span {
 }
 
 .social {
-    height: 100vh;
+    height: 100%;
     .tren {
         padding: 5rem 0;
         display: flex;
