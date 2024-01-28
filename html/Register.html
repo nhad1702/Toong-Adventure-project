@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Login.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" class="form" id="createAcc">
+            <h1 class="formTitle">Sign Up</h1>
+            <div class="formMes formMesERR" id="errMes"></div>
+            <div class="formInpGrp">
+                <input type="text" id="username" class="formInp" placeholder="Username">
+            </div>
+            <div class="formInpGrp">
+                <input type="email" id="email" class="formInp" placeholder="Email">
+                <div class="formInpMesERR"></div>
+            </div>
+            <div class="formInpGrp">
+                <input type="password" id="password" class="formInp" placeholder="Password">
+                <div class="formInpMesERR"></div>
+            </div>
+            <button class="formBTN" type="submit" onclick="saveData()">Sign Up</button>
+            <p class="formText">
+                Already have account? <a class="formlink" href="Login.html" id="linkLogin">Sign In</a>
+            </p>
+        </form>
+    </div>
+    <script src="../js/Register.js"></script>
+</body>
+</html>

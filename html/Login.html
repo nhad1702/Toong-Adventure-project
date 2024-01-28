@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Login.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="formTitle">Login</h1>
+            <div class="formMes formMesERR"></div>
+            <div class="formInpGrp">
+                <input type="text" class="formInp" id="username" autofocus placeholder="Username or Email">
+            </div>
+            <div class="formInpGrp">
+                <input type="password" class="formInp" id="password" autofocus placeholder="Password">
+                <div class="formInpMesERR"></div>
+            </div>
+            <p class="formText">
+                <a href="#" class="formlink">Forgot your password?</a>
+            </p>
+            <button class="formBTN" type="submit" onclick="saveData()">Log In</button>
+            <p class="formText">
+                Don't have account? <a class="formlink" href="Register.html" id="linkCreateAcc">Create account</a>
+            </p>
+        </form>
+    </div>
+    <script src="../js/Login.js"></script>
+</body>
+</html>
