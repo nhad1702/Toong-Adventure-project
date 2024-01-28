@@ -192,6 +192,10 @@ h1 span, .title1 span, .expert span, .tren span, .duoi span, .findTour span {
     grid-template-columns: repeat(3, 0.1fr);
     grid-auto-rows: max-content;
     gap: 30px;
+    a {
+        text-decoration: none;
+        color: #000;
+    }
 }
 
 .tours img {
@@ -219,6 +223,11 @@ h1 span, .title1 span, .expert span, .tren span, .duoi span, .findTour span {
     transform: scale(1.02);
     transition: 0.5s;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tours a:active {
+    text-decoration: none;
+    color: #000;
 }
 
 .space {
