@@ -1,7 +1,10 @@
 :root {
-    --primary-background-color: #006400;
+    --primary-background-color: #003f3b;
     --primary-dark-background-color: #080808;
-    --tw-text-opacity: 1; 
+    --primary-span-color: #f46036;
+    --primary--title-color: #fff;
+    --primary-font-family: 'Livvic', sans-serif;
+    --secondary-font-family: 'Quicksand', sans-serif;
 }
 
 * {
@@ -45,6 +48,20 @@ header {
     padding: 0 10px;
 }
 
+.loginSignUp {
+    a {
+        text-decoration: none;
+        font-family: var(--primary-font-family);
+        color: var(--primary--title-color);
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 26px;
+    }
+    span {
+        padding: 0 5px;
+    }
+}
+
 section {
     height: 100vh;
 }
@@ -78,7 +95,7 @@ section {
     position: relative;
 }
 .hero-section_background-container {
-    background-image: url(/img/top-background.jpg);
+    background-image: url(../img/About/top-background.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -299,7 +316,7 @@ columns: 3;
 .join-section {
     position: relative;
     height: 450px;
-    background-image: url(/img/bottom-img.jpg);
+    background-image: url(../img/About/bottom-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -310,6 +327,10 @@ columns: 3;
     left: 50%;
     transform: translate(-50%,calc(-50% - 50px));
     max-width: 582px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .p-3 {
     padding: 0.75rem 
@@ -335,86 +356,6 @@ columns: 3;
 }
 .mt-5 {
     margin-top: 1.25rem;
-}
-footer {
-    height: 70vh;
-    background-color: var(--primary-background-color);
-    padding: 0 15px;
-    color: #fff;
-    .footer {
-        padding-top: 50px;
-        padding-bottom: 29px;
-        display: flex;
-        flex-direction: row;
-        a {
-            text-decoration: none;
-        }
-        .half-width {
-            width: 50%;
-            .endTitle {
-                padding-top: 4rem;
-                padding-bottom: 0.75rem;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 5px;
-                img {
-                    padding: 0.75rem 0.75rem 0.75rem 0;
-                }
-                h2 {
-                    padding-top: 1.25rem;
-                    font-size: var(--primary-font-family);
-                    font-weight: 700;
-                    font-style: normal;
-
-                }
-            }
-            .contact {
-                padding-bottom: 1.25rem;
-                font-family: var(--secondary-font-family);
-                img {
-                    padding-right: 0.5rem;
-                }
-                li {
-                    padding: 0.75rem 0;
-                }
-            }
-            li {
-                list-style: none;
-                font-family: var(--secondary-font-family)
-            }
-        }
-        .flex-row {
-            display: flex;
-            flex-direction: row;
-            padding: 4rem 0 1.25rem 1rem;
-            div {
-                width: 250px;
-                height: 168px;
-            }
-            h2 {
-                font-family: var(--primary-font-family);
-                font-style: normal;
-                font-size: 700;
-                font-size: 17px;
-                line-height: 26px;
-            }
-            li {
-                padding-top: 1rem;
-            }
-        }
-    }
-    .credit {
-        border-top: 1px solid #fff;
-        padding-top: 1.75rem;
-        font-family: var(--primary-font-family);
-        font-style: normal;
-        p {
-            font-weight: 400;
-            font-size: 17px;
-            line-height: 26px;
-        }
-    }
 }
 /* experience-section*/
 .p-top {
@@ -485,7 +426,93 @@ footer {
     border: none;
 }
 
+.footerImg {
+    height: 100%;
+    margin-bottom: -200px;
+}
 
+footer {
+    height: 100%;
+    background-color: var(--primary-background-color);
+    padding: 0 15px;
+    padding-bottom: 10px;
+    color: #fff;
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 29px;
+        display: flex;
+        flex-direction: row;
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .half-width {
+            width: 50%;
+            .endTitle {
+                padding-top: 4rem;
+                padding-bottom: 0.75rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+                img {
+                    padding: 0.75rem 0.75rem 0.75rem 0;
+                }
+                h2 {
+                    padding-top: 1.25rem;
+                    font-size: var(--primary-font-family);
+                    font-weight: 700;
+                    font-style: normal;
+
+                }
+            }
+            .contact {
+                padding-bottom: 1.25rem;
+                font-family: var(--secondary-font-family);
+                img {
+                    padding-right: 0.5rem;
+                }
+                li {
+                    padding: 0.75rem 0;
+                }
+            }
+            li {
+                list-style: none;
+                font-family: var(--secondary-font-family)
+            }
+        }
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            padding: 4rem 0 1.25rem 1rem;
+            div {
+                width: 250px;
+                height: 168px;
+            }
+            h2 {
+                font-family: var(--primary-font-family);
+                font-style: normal;
+                font-size: 700;
+                font-size: 17px;
+                line-height: 26px;
+            }
+            li {
+                padding-top: 1rem;
+            }
+        }
+    }
+    .credit {
+        border-top: 1px solid #fff;
+        padding-top: 1.75rem;
+        font-family: var(--primary-font-family);
+        font-style: normal;
+        p {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 26px;
+        }
+    }
+}
 
     
 
