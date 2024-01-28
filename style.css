@@ -520,6 +520,7 @@ footer {
         flex-direction: row;
         a {
             text-decoration: none;
+            color: var(--primary--title-color);
         }
         .half-width {
             width: 50%;
