@@ -63,7 +63,7 @@ header {
 }
 
 section {
-    height: 100vh;
+    height: 100%;
 }
 
 .intro {
@@ -427,8 +427,7 @@ columns: 3;
 }
 
 .footerImg {
-    height: 100%;
-    margin-bottom: -200px;
+    margin-bottom: -5px;
 }
 
 footer {
